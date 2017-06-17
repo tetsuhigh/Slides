@@ -23,15 +23,15 @@ M? V? V? M?
 
 ---
 
-M : Model(モデル)
+<span style="color: red; ">**M : Model(モデル)**</span>
 
 アプリケーションで扱うデータ、それに伴う機能（ビジネスロジック）
 
-V : View(ビュー)
+<span style="color: blue; ">**V : View(ビュー)**</span>
 
 ユーザーへのデータの出力、ユーザーからのデータの入力
 
-VM : ViewModel(ビューモデル)
+<span style="color: green; ">**VM : ViewModel(ビューモデル)**</span>
 
 ビューに描画するための状態の保持と、ビューから受け取った入力を変換してモデルに伝達、ビューとの通信にはデータバインディングを利用する
 
