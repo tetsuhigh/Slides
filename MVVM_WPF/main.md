@@ -37,7 +37,7 @@ M? V? V? M?
 
 --
 
-※MVVMとユーザーの関連の図を入れる
+![MVVM関連図](./images/MVVM.png)
 
 --
 
