@@ -37,7 +37,7 @@ M? V? V? M?
 
 --
 
-![MVVM関連図](./images/MVVM.png)
+![MVVM関連図](images/MVVM.png)
 
 --
 
