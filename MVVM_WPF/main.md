@@ -37,7 +37,7 @@ M? V? V? M?
 
 --
 
-![MVVM関連図](https://github.com/tetsuhigh/Slides/blob/master/MVVM_WPF/image/MVVM.png)
+![MVVM関連図](image/MVVM.png)
 
 --
 
