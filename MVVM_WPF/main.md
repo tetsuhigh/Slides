@@ -54,3 +54,13 @@ M? V? V? M?
 ## これまであったMVCとかとは何が違うの？
 
 ---
+
+![MVC関連図](./image/MVC.png)
+
+---
+
+### 参考サイト
+
+- http://qiita.com/shinkuFencer/items/f2651073fb71416b6cd7
+
+---
