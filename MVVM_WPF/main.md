@@ -4,10 +4,11 @@
 ---
 
 ## 目次
-- 背景
-- MVVMとは
-- MVVMとMV○との違いは？
-- WPFでMVVM
+* 背景
+* MVVMとは
+* MVVMとMV○との違いは？
+* WPF
+* WPFでMVVM
 
 ---
 
@@ -59,8 +60,8 @@ M? V? V? M?
 
 ---
 
- - 関連が多い
- - ViewとModelが関連し、Modelに依存するため処理が大きくなりやすい
+ * 関連が多い
+ * ViewとModelが関連し、Modelに依存するため処理が大きくなりやすい
 
 --
 
@@ -68,13 +69,22 @@ M? V? V? M?
 
 --
 
-- MVCと比べて関連が少なく、機能分担しやすい
-- ModelとViewの関連が疎
+* MVCと比べて関連が少なく、機能分担しやすい
+* ModelとViewの関連が疎
+
+---
+
+## MV○とMVVMを比べて
+
+* MVCと比べて関連が少なく、機能分担しやすい
+* MVPと比べてViewとViewModel(Presenter)の関連が疎
 
 ---
 
 ### 参考サイト
-
-- http://qiita.com/shinkuFencer/items/f2651073fb71416b6cd7
+* MVVM
+  * http://qiita.com/shinkuFencer/items/f2651073fb71416b6cd7
+* WPF
+  * http://takamints.hatenablog.jp/entry/why-using-commands-in-wpf-mvvm
 
 ---
