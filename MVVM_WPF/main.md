@@ -59,6 +59,20 @@ M? V? V? M?
 
 ---
 
+ - 関連が多い
+ - ViewとModelが関連し、Modelに依存するため処理が大きくなりやすい
+
+--
+
+![MVP関連図](./image/MVP.png)
+
+--
+
+- MVCと比べて関連が少なく、機能分担しやすい
+- ModelとViewの関連が疎
+
+---
+
 ### 参考サイト
 
 - http://qiita.com/shinkuFencer/items/f2651073fb71416b6cd7
