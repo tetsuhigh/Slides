@@ -77,10 +77,51 @@ M? V? V? M?
 
 ---
 
-## MV○とMVVMを比べて
+### MV○とMVVMを比べて
 
 * MVCと比べて関連が少なく、機能分担しやすい
 * MVPと比べてViewとViewModel(Presenter)の関連が疎
+
+---
+
+## WPF
+
+MVVMパターンでの開発するための仕組みが揃ったユーザーインターフェースサブシステム。
+
+---
+
+### MVVMパターンでの開発するための仕組み?
+
+ * デザインと見た目の分離
+  * XAML + プログラミング言語コード(C#など)
+ * データバインディング
+ 
+--
+
+### その他、WPFの特徴
+
+ * グラフィックス
+  * なんか綺麗で軽いらしい
+ * UI
+  * 拡張機能が多く、カスタマイズしやすいらしい
+ * etc...
+---
+
+## XAMLとは?
+
+Microsoft が開発した XML ベースのマークアップ言語
+
+```
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    Title="Window with Button"  
+    Width="250" Height="100">  
+  
+  <!-- Add button to window -->  
+  <Button Name="button">Click Me!</Button>  
+  
+</Window>  
+```
 
 ---
 
@@ -88,6 +129,7 @@ M? V? V? M?
 * MVVM
   * http://qiita.com/shinkuFencer/items/f2651073fb71416b6cd7
 * WPF
+  * https://msdn.microsoft.com/ja-jp/library/mt149842.aspx
   * http://takamints.hatenablog.jp/entry/why-using-commands-in-wpf-mvvm
 
 ---
