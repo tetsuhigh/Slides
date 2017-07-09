@@ -112,15 +112,20 @@ MVVMパターンでの開発するための仕組みが揃ったユーザーイ�
 Microsoft が開発した XML ベースのマークアップ言語
 
 ```
-<Window  
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-    Title="Window with Button"  
-    Width="250" Height="100">  
-  
-  <!-- Add button to window -->  
-  <Button Name="button">Click Me!</Button>  
-  
-</Window>  
+<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Window with Button"  
+        Width="250" Height="100">
+
+    <!-- Add button to window -->
+    <Button Name="button">Click Me!</Button>
+
+</Window>
 ```
 
 ---
