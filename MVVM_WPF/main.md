@@ -153,6 +153,8 @@ Microsoft が開発した XML ベースのマークアップ言語
 
 ビューのコントロール（項目）の属性と、ビューモデルのプロパティの値をバインドする。INotifyPropertyChangedを利用することで
 
+---
+
 XAML
 ```
 <TextBox Text="{Binding Input, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
