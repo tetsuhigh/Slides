@@ -141,7 +141,36 @@ Microsoft が開発した XML ベースのマークアップ言語
 
 --
 
+XAML
+```
+<TextBox Text="{Binding Input, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+```
 
+C#
+```
+private string input;
+public string Input
+{
+    get { return input; }
+    set 
+    {
+       if (Equals(field, value)) { return; }
+       input = value;
+       PropertyChanged(this, new PropertyChangedEventArgs(nameof(Input));
+    }
+}
+```
+--
+
+Designer.cs
+```
+private System.Windows.Forms.TextBox textBox;
+```
+
+Form.cs
+```
+textBox.Text = model.Text;
+```
 
 ---
 
