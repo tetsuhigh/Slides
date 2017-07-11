@@ -211,30 +211,67 @@ Vのコントロール（項目）の属性と、コントロールの属性を�
 
 ---
 
-※コマンドをバインドするサンプルコード
+XAML
+```
+<Button Command="{Binding SampleCommand}"/>
+```
+
+ViewModel
+```
+public SampleCommand SampleCommand {get;} = new SampleCommand();
+```
+
+Command
+```
+public class SampleCommand : ICommand
+{
+ public event EventHandler CanExecuteChanged;
+ public bool CanExecute(object parameter)
+ {
+  return true;
+ }
+ public void Execute(object parameter)
+ {
+  // 処理
+ }
+}
+```
 
 --
 
-※コードビハインドのサンプルコード
+Designer.cs
+```
+Button button1 = new Button();
+button1.Click += EventHandler(button1_Click);
+Controls.Add(button1);
+```
+
+Form.cs
+```
+private void button1_Click(object sender, EventArgs e)
+{
+ // 処理
+}
+```
 
 ---
 
 ## WPFとMVVM
 
-WPFはデザインとロジックの分離、データバインディングが実現されており、MVVMでの設計に適している（というか、MVVMでの設計を前提に作られている）。
+WPFはデザインとロジックの分離、データバインディングが実現されており、MVVMでの設計が適している（というか、MVVMでの設計を前提に作られている）。
 
 ---
 
 ## まとめ
 
 * MVVMはビューとビューモデルが疎な関係になっているため、機能分担が明確
-* 
+* WPFはMVVMで設計をしやすい仕組みになっている
 
 ---
 
 ## 注意
 
-MVVMはMVC、MVPの上位互換ではない。MVVMはMVP等の前の設計パターンの弱い点を改善しているが、全ての面で勝っているわけではない。というのも、開発において設計を決める上で、どんなアプリか？メンバーのスキルは？求められるQCDは？といった色々な要素を考慮して決める必要がある。Windowsアプリだから安易にWPFでMVVMで設計しようという風にはしないようにしましょう。
+MVVMはMVC、MVPの上位互換ではない。MVVMはMVP等の前の設計パターンの弱い点を改善しているが、全ての面で勝っているわけではない。
 
 ---
 
