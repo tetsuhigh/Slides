@@ -157,7 +157,8 @@ Vのコントロール（項目）の属性と、VMのプロパティの値を�
 
 XAML
 ```
-<TextBox Text="{Binding Input, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+<TextBox Text="{Binding Input, Mode=TwoWay, 
+    UpdateSourceTrigger=PropertyChanged}" />
 ```
 
 C#
@@ -195,14 +196,30 @@ Vのコントロール（項目）の属性と、コントロールの属性を�
 
 ---
 
-※画面項目間のバインディングのサンプルコード
+XAML
+```
+<CheckBox x:Name="checkbox"/>
+<TextBox IsEnable="{Binding ElementName=CheckBox, Path=IsChecked}"/>
+```
 
 --
 
-※Formで実現した場合のサンプルコード
+Designer.cs
+```
+TextBox textBox1 = new TextBox();
+Controls.Add(textBox1);
 
----
+CheckBox checkBox1 = new CheckBox();
+checkBox1.CheckedChanged += EventHandler(checkBox1_CheckedChanged);
+Controls.Add(checkBox1);
+```
 
+Form.cs
+```
+private void checkBox1_CheckedChanged(object sender, EventArgs e)
+{
+    textBox1.Enabled = checkBox1.Checked;
+}
 ---
 
 ### コマンドインターフェースと画面での実行コマンドのバインディングとは
