@@ -225,15 +225,15 @@ Command
 ```
 public class SampleCommand : ICommand
 {
- public event EventHandler CanExecuteChanged;
- public bool CanExecute(object parameter)
- {
-  return true;
- }
- public void Execute(object parameter)
- {
-  // 処理
- }
+    public event EventHandler CanExecuteChanged;
+    public bool CanExecute(object parameter)
+    {
+        return true;
+    }
+    public void Execute(object parameter)
+    {
+        // 処理
+    }
 }
 ```
 
@@ -250,7 +250,7 @@ Form.cs
 ```
 private void button1_Click(object sender, EventArgs e)
 {
- // 処理
+    // 処理
 }
 ```
 
