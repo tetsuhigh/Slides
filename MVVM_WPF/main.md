@@ -14,7 +14,7 @@
 
 ## 背景
 
-MVVMってよく聞くし、社内の勉強会もあるから参加してみたけど、なんとなくわかっている気になっているけど、でも良く分かんない。ちょっと勉強してみたことをまとめる。
+WPFとMVVMってよく聞く。それ関連のXAMLの勉強会もあるから参加してみて、なんとなくわかっている気になっているけど、でも良く分かんない。ちょっと勉強してみたことをまとめる。
 
 ---
 
@@ -62,6 +62,7 @@ M? V? V? M?
 
 ---
 
+### MVCの欠点
  * 関連が多い
  * ViewとModelが関連し、Modelに依存するため処理が大きくなりやすい
 
@@ -72,6 +73,7 @@ M? V? V? M?
 
 ---
 
+### MVCからの改善点
 * MVCと比べて関連が少なく、機能分担しやすい
 * ModelとViewの関連が疎
 
@@ -220,6 +222,7 @@ private void checkBox1_CheckedChanged(object sender, EventArgs e)
 {
     textBox1.Enabled = checkBox1.Checked;
 }
+```
 ---
 
 ### コマンドインターフェースと画面での実行コマンドのバインディングとは
@@ -299,4 +302,3 @@ MVVMはMVC、MVPの上位互換ではない。MVVMはMVP等の前の設計パタ
   * https://msdn.microsoft.com/ja-jp/library/mt149842.aspx
   * http://takamints.hatenablog.jp/entry/why-using-commands-in-wpf-mvvm
 
----
